@@ -18,7 +18,6 @@ public class TheVariableShop {
         double myFirstDouble = 123.33;
     
     
-    
     //Print out all variables
     System.out.println("My family consists of " + myFirstByte + " people.");
     System.out.println("The first letter of my name is an " + myFirstChar + ".");
