@@ -34,7 +34,6 @@ public class TheFourSistersAndTheDuckbear {
 
         for (int eggs = 0; eggs < 100; eggs++ ) //Loops through eggs 1 till 100 (99) and add a egg for every loop cycle 
         if (eggs % 4 > eggs /4) //Is the amount of eggs remain after deviding between the sisters higher than the amount devided between the sisters 
-        System.out.println("The duckbear gets more eggs at " + eggs + " eggs total.");
-
+        System.out.println("The duckbear gets more eggs at " + eggs + " eggs total.");//Shows all egg counts that the duckbear gets more eggs than the sisters (1,2,3,6,7,11)
     }
 }
