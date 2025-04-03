@@ -48,14 +48,14 @@ public class TheDefenseOfConsolas {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
-        // Groene achtergrond voor de hele output
-        // System.out.print(GREEN_BG);
+        //1. Targets
         System.out.println(BLUE_TEXT + "What is the target row for your deployement?" + RESET);
         int targetRow = in.nextInt();
         System.out.println(BLUE_TEXT + "What is the target column for your deployement?" + RESET);
         int targetColumn = in.nextInt();
         System.out.println("\n" + ORANGE_TEXT + BOLD + ITALICIZE + "Thanks, your deployement positions are:" + RESET + "\n");
-        //Show all combinations without the target row and column number
+        
+        //2. Show all combinations without the target row and column number
         if (targetColumn - 1 >= 0) {
             System.out.println("(" + "row " + (targetRow -1) + ", " + "column " + targetColumn + ")");  // Left
         }
@@ -79,7 +79,6 @@ public class TheDefenseOfConsolas {
             System.out.printf("    | -- |    \n");
         }
 
-        // Print horizontal separator
         System.out.printf("---------------\n");
 
         // Print left, center, and right positions
@@ -97,7 +96,6 @@ public class TheDefenseOfConsolas {
             System.out.printf(" --\n");
         }
 
-        // Print horizontal separator
         System.out.printf("---------------\n");
 
         // Bottom position (below)
@@ -107,10 +105,10 @@ public class TheDefenseOfConsolas {
             System.out.printf("    | -- |    \n");
         }
 
-        // Blauwe tekst voor de laatste println
+        //3. Green background text
         System.out.println("\n" + "Defense system: " + GREEN_BG + "activated" + RESET);
         
-        //play a sound when results have been computed and displayed
+        //4. play a sound when results have been computed and displayed
         Toolkit.getDefaultToolkit().beep();
         in.close();
     }
