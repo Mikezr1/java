@@ -1,6 +1,6 @@
-package challenge12;
+package cheatsheet;
 
-public class test {
+public class operators {
     public static void main(String[] args) {
         // 🔹 Unary Operators - Werken op slechts 1 waarde
         int a = 5;
