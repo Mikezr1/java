@@ -55,15 +55,17 @@ public class BuyingInventory {
             78.99,
             2300.00,
             70.45
-        }
+        };
 
 
             System.out.println(BLUE + "This is our menu:"+ RESET + "\n");
 
+            //challenge 1
             for (int i = 0 ; i < menuItems.length; i++){
-                System.out.println((i + 1) + "." + menuItems[i] ); //Voeg voor elke string van menuitems een cijfer toe als menu nummer.
+                System.out.println((i + 1) + "." + menuItems[i] ); //Voeg automatisch voor elke string van menuitems een cijfer toe als menu nummer.
             };
             
+            //challenge 2
             System.out.println(BLUE + "What would you like to buy? Enter the menu number"+ RESET + "\n");
             
             Scanner menuItemsScanner = new Scanner(System.in);
@@ -75,27 +77,25 @@ public class BuyingInventory {
                     System.out.println("The rope costs" + menuPrices[menuItem - 1]);
                     break;
                 }
-
                 case 2: {
                     System.out.println("The Climbing Equipment costs $145,00");
                     break;
                 }
-
                 case 3: {
                     System.out.println("The Clean Water is $1,29");
                     break;
                 }
-
                 case 4: {
                     System.out.println("The Rope is $7,99");
                     break;
                 }
-
                 default: {
                     System.out.println("The menu item your looking for is not available");
                 }
 
             }
+
+            // System.out.println("the" + menuItems + "costs" + menuPrices );
 
             menuItemsScanner.close();
     }
