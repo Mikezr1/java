@@ -1,0 +1,14 @@
+.qodo
+# Ignore compiled Java class files
+*.class
+
+# Ignore IntelliJ or Eclipse output folders
+out/
+build/
+target/
+bin/
+product/
+
+# (Optional) IDE folders
+.idea/
+*.iml
