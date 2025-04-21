@@ -67,35 +67,56 @@ public class BuyingInventory {
             
             //challenge 2
             System.out.println(BLUE + "What would you like to buy? Enter the menu number"+ RESET + "\n");
-            
+
             Scanner menuItemsScanner = new Scanner(System.in);
 
             int menuItem = menuItemsScanner.nextInt();
 
+            //In my eyes a shorter switch statement :)
             switch (menuItem) {
-                case 1: {
-                    System.out.println("The rope costs" + menuPrices[menuItem - 1]);
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                    System.out.println("The " + menuItems[menuItem - 1] +" has a price of " + menuPrices[menuItem - 1] + " gold.");
                     break;
-                }
-                case 2: {
-                    System.out.println("The Climbing Equipment costs $145,00");
-                    break;
-                }
-                case 3: {
-                    System.out.println("The Clean Water is $1,29");
-                    break;
-                }
-                case 4: {
-                    System.out.println("The Rope is $7,99");
-                    break;
-                }
-                default: {
+                default:
                     System.out.println("The menu item your looking for is not available");
-                }
 
             }
 
-            // System.out.println("the" + menuItems + "costs" + menuPrices );
+//            First try at a switch statement (very long code)
+//            switch (menuItem) {
+//                case 1: {
+//                    System.out.println(" costs " + menuPrices[menuItem - 1]);
+//                    break;
+//                }
+//                case 2: {
+//                    System.out.println("The Climbing Equipment costs " + menuPrices[menuItem - 1]);
+//                    break;
+//                }
+//                case 3: {
+//                    System.out.println("The Clean Water costs" + menuPrices[menuItem - 1]);
+//                    break;
+//                }
+//                case 4: {
+//                    System.out.println("The Rope is $7,99");
+//                    break;
+//                }
+//                case 5: {
+//                    System.out.println("The  is $7,99");
+//                    break;
+//                }
+//                default: {
+//                    System.out.println("The menu item your looking for is not available");
+//                }
+//            }
+
+            //Interesting way to automate the switch?
+//            System.out.println("the " + menuItems[menuItem - 1] + " costs " + menuPrices[menuItem - 1] );
 
             menuItemsScanner.close();
     }
