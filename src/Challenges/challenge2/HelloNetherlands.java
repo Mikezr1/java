@@ -1,4 +1,4 @@
-package lesson2;
+package Challenges.challenge2;
 
 public class HelloNetherlands {
     public static void main(String[] args) {
