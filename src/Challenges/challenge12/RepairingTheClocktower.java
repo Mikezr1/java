@@ -1,4 +1,4 @@
-package challenge12;
+package Challenges.challenge12;
 
 import java.util.Scanner;
 

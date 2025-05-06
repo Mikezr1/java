@@ -1,4 +1,4 @@
-package challenge7;
+package Challenges.challenge7;
 
 /*
 Objectives:

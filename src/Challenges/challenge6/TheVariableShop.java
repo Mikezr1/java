@@ -1,4 +1,4 @@
-package challenge6;
+package Challenges.challenge6;
 
 /* Objectives:
 1. Build a program with a variable of all eight primitive Java types (as well as the ‘text’ type).
