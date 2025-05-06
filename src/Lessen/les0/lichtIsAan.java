@@ -1,4 +1,4 @@
-package Lessen.les1;
+package Lessen.les0;
 //6// variabele aanmaken =
 //10// je geeft een waarde aan de variabele ==
 //16// if statement in het kort, maar gebruik dan duidelijke variabele namen

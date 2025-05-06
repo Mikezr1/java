@@ -1,4 +1,4 @@
-package Lessen.les1;
+package Lessen.les0;
 
 //7// vergelijking -> if statemment
 //16// De knikker kan in een baan vallen en de andere banen krijgen niks

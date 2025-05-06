@@ -1,4 +1,4 @@
-package Lessen.les1;
+package Lessen.les0;
 
 public class HelloWorld {
     public static void main(String[] args) {
