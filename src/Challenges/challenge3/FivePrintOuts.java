@@ -1,4 +1,4 @@
-package lesson3;
+package Challenges.challenge3;
 
 public class FivePrintOuts {
     public static void main(String[] args) {

@@ -29,7 +29,7 @@
 // It took me about 30-45 minutes to figure out all inner workings
 
 
-package lesson4;
+package Challenges.challenge4;
 
 import java.util.Scanner;
 

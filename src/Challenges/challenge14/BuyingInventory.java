@@ -1,4 +1,4 @@
-package challenge14;
+package Challenges.challenge14;
 import java.util.Scanner;
 /*
 It is time to resupply. A nearby outfitter shop has the supplies you need but is so disorganized that they

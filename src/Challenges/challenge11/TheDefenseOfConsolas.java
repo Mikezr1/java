@@ -1,4 +1,4 @@
-package challenge11;
+package Challenges.challenge11;
 
 import java.util.Scanner;
 import java.awt.Toolkit;
