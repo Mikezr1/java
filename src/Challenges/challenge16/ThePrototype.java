@@ -24,8 +24,8 @@ What is your next guess? 27
 You guessed the number!
 Objectives:
 
-Build a program that will allow a user, the pilot, to enter a number.
-If the number is above 100 or less than 0, keep asking.
+√ Build a program that will allow a user, the pilot, to enter a number.
+If the number is above 100 or less than 0, keep asking. -> Do while loop!
 Clear the screen once the program has collected a good number (you can just write 50 blank lines to clear the screen :) ).
 Ask a second user, the hunter,to guess numbers.
 Indicate whether the user guessed too high, too low, or guessed right.
@@ -34,10 +34,40 @@ Loop until they get it right, then end the program.
 
 public class ThePrototype {
     public static void main(String[] args) {
-        Scanner pilotInput = new Scanner (System.in);
-        Scanner pilotInput = 
-    }
+        Scanner scan = new Scanner (System.in);
+//        int pilotInput = scan.nextInt();
 
-    //methode
-    public static data type + variabele naam
+        int answer = 5;
+        int minRange = 0;
+        int maxRange = 100;
+
+//        System.out.println("geef een nummer");
+//        int pilotInput = scan.nextInt();
+//
+//        while (pilotInput < minRange || pilotInput >= maxRange ) {
+//            System.out.println("blijf raden");
+//            pilotInput = scan.nextInt();
+//
+//        } if (pilotInput <= maxRange) {
+//            System.out.println("correct geraden");
+//
+//        }
+
+
+
+//        for (int i = 0; i < maxRange ; i++) {
+//            do {
+//                System.out.println("Blijf raden");
+//                pilotInput = scan.nextInt();
+//            }
+//
+//            while ( pilotInput != answer) {
+//                System.out.println("Getal is goed");
+//            }
+//        }
+
+//        else (pilotInput >= minRange && pilotInput <= maxRange) {
+//            System.out.println("Getal is goed");
+//        }
+    }
 }
