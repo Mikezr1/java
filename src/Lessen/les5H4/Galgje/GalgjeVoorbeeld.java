@@ -18,13 +18,24 @@ public class GalgjeVoorbeeld {
             guessedLetters.add('_');
         }
 
-        int lives = 6;
+        final int maxLives = 6;
+
+        int lives = maxLives;
 
         while(lives > 0) {
             System.out.println(Galg.forStage(lives));
             System.out.println(guessedLetters);
+            System.out.printf("Je hebt nog %d leven%s over\n", lives, (lives > 1) ? "s" : "");
             System.out.print("Raad een letter: ");
-            char guess = scanner.next().toLowerCase().charAt(0);
+
+            String input = scanner.next();
+
+            if (input.length() > 1) {
+                System.out.println("Helaas mag je maar een letter per keer gebruiken");
+                continue;
+            }
+
+            char guess = input.toLowerCase().charAt(0);
 
             if (allGuessedLetters.contains(guess)) {
                 System.out.println("Deze letter heb je al geraden");
@@ -45,12 +56,15 @@ public class GalgjeVoorbeeld {
             }
 
             if (!guessedLetters.contains('_')) {
-                System.out.println("Je hebt gewonnen, je bent een koning.");
+                System.out.println("Je hebt gewonnen, je bent een koning. \uD83D\uDC51 ");
                 break;
             }
-
         }
 
         System.out.println(Galg.forStage(lives));
+
+        if (lives == 0) {
+            System.out.println("Je hebt verloren. \uD83D\uDC80 ");
+        }
     }
 }

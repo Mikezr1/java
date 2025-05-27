@@ -25,8 +25,10 @@ public class GalgjeVoorbeeldMetUitleg {
             guessedLetters.add('_');
         }
 
-        // levens -> getal
-        int lives = 6;
+        // levens -> getal, je wilt geen magic numbers dus moet je er een extra variabele aan geven.
+        final int maxLives = 6;
+
+        int lives = maxLives;
 
         // Herhalend
         // Als levens op zijn, stoppen met herhalen
@@ -35,10 +37,20 @@ public class GalgjeVoorbeeldMetUitleg {
             System.out.println(Galg.forStage(lives));
             // geraden letters tonen
             System.out.println(guessedLetters);
+            // De ingevoerde letter mag niet meer dan twee zijn. Met een string format en ternary om te checken hoeveel levens er nog zijn
+            System.out.printf("Je hebt nog %d leven%s over\n", lives, (lives > 1) ? "s" : "");
 
             System.out.print("Raad een letter: ");
+
+            String input = scanner.next();
+
+            if (input.length() > 1) {
+                System.out.println("Helaas mag je maar een letter per keer gebruiken");
+                continue;
+            }
+
             // Speler 2 gaat raden, ook lowercase
-            char guess = scanner.next().toLowerCase().charAt(0);
+            char guess = input.toLowerCase().charAt(0);
 
             // niet meerdere keren dezelfde letter raden
             if (allGuessedLetters.contains(guess)) {
@@ -66,8 +78,8 @@ public class GalgjeVoorbeeldMetUitleg {
 
             // Als woord geraden is, stoppen met herhalen
             if (!guessedLetters.contains('_')) {
-                // Feedback aan gebruiker
-                System.out.println("Je hebt gewonnen, je bent een koning.");
+                // Feedback aan gebruiker, als er geen _ meer over zijn dan heb je gewonnen
+                System.out.println("Je hebt gewonnen, je bent een koning. \uD83D\uDC51");
                 // Stop met loopen
                 break;
             }
@@ -77,6 +89,11 @@ public class GalgjeVoorbeeldMetUitleg {
         // Feedback speler gewonnen of verloren
         // Galgje laten zien
         System.out.println(Galg.forStage(lives));
+
+        //als de levens op zijn, dan ben je af. dit staat buiten de while loop zodat je eerst door alle levens heen gaat.
+        if (lives == 0) {
+            System.out.println("Je hebt verloren. \uD83D\uDC80 ");
+        }
     }
 }
 
