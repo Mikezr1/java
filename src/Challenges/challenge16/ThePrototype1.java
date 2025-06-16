@@ -23,6 +23,15 @@ What is your next guess? 25
 What is your next guess? 27
 You guessed the number!
 
+Step 1, what do we need in terms of structure and methodes?
+
+class Game (Game logica and Game loop methode, input methode, output methode)
+Attributen in de Game klasse
+set_target_number methode
+guess_number methode
+clear_screen methode
+amountOfTries methode (optioneel)
+
 
 Objectives:
 √ Build a program that will allow a user, the pilot, to enter a number.
@@ -46,7 +55,7 @@ Sub opbjectives:
 10. congrats the user with the defeat or win. ->
 10. end program
 */
-public class ThePrototype {
+public class ThePrototype1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
         //1.setup program with a scope of 1-100
